@@ -26,17 +26,32 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+/* Gradient Text untuk Nama */
 .custom-name {
-  background: linear-gradient(45deg, #0056b3, #1e90ff);
+  background: linear-gradient(45deg, #7b2ff7, #f107a3); /* Ungu gradasi terang */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 [data-bs-theme="dark"] .custom-name {
-  background: linear-gradient(45deg, #66ccff, #ffffff);
+  background: linear-gradient(45deg, #c084fc, #a78bfa); /* Gradasi ungu pastel untuk dark */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Gradient Text untuk Role (Frontend Developer & UI/UX Designer) */
+.custom-role {
+  background: linear-gradient(45deg, #b621fe, #1fd1f9); /* Ungu ke biru muda */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-bs-theme="dark"] .custom-role {
+  background: linear-gradient(45deg, #c084fc, #8be9fd); /* Soft gradasi untuk dark */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* ========== Social Icons ========== */
 .social-icons {
