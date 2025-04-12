@@ -5,7 +5,7 @@ html {
 
 /* ========== Hero Section ========== */
 .hero-section {
-  background: linear-gradient(135deg, #cccccc, #888888); /* Gradasi abu-abu kalem */
+  background: linear-gradient(135deg, #2b2b2b, #0f0f0f); /* Gradasi abu-abu gelap mendekati hitam */
   color: white;
   min-height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@ html {
 }
 
 [data-bs-theme="dark"] .hero-section {
-  background: linear-gradient(135deg, #444444, #1f1f1f); /* Gradasi abu-abu gelap */
+  background: linear-gradient(135deg, #1a1a1a, #000000); /* Lebih pekat saat dark mode aktif */
   color: white;
 }
 
@@ -56,8 +56,6 @@ html {
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.08);
 }
-
-
 
 /* ========== Social Icons ========== */
 .social-icons {
