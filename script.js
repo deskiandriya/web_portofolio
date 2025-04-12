@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 1, // default
+    slidesPerView: 1,
     spaceBetween: 30,
     speed: 600,
     autoplay: {
@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  setTimeout(() => swiper.update(), 500);
 });
 
 // ========== Dark/Light Mode Toggle ==========
