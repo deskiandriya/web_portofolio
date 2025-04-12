@@ -52,3 +52,20 @@ toggleBtn.addEventListener("click", () => {
   htmlEl.setAttribute("data-bs-theme", newTheme);
   toggleBtn.textContent = newTheme === "dark" ? "☀️" : "🌙";
 });
+
+
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
