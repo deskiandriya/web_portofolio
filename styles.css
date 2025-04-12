@@ -8,6 +8,9 @@ html {
   background: linear-gradient(135deg, #72c6ff, #004e92);
   color: white;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
   transition: background 0.4s ease;
 }
 
@@ -36,12 +39,26 @@ html {
 }
 
 /* ========== Social Icons ========== */
+.social-icons {
+  margin-top: 20px;
+}
+
 .social-icons a {
   width: 40px;
   height: 40px;
+  margin: 0 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }
 
 /* ========== Card Icon Hover Effect ========== */
@@ -55,7 +72,7 @@ html {
 
 /* ========== Rotated Image Style ========== */
 .rotate-img {
-  transform: rotate(-5deg);
+  transform: rotate(-3deg);
   transition: transform 0.4s ease;
 }
 
@@ -63,7 +80,7 @@ html {
   transform: rotate(0deg) scale(1.05);
 }
 
-/* ========== Swiper Style (Slide Foto) ========== */
+/* ========== Swiper Style (Photo Slide) ========== */
 .swiper {
   padding: 50px 0;
   width: 100%;
@@ -87,9 +104,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(-5deg);
-  transition: transform 0.4s ease;
   background: transparent;
+  transition: transform 0.4s ease;
 }
 
 .swiper-slide img {
@@ -101,12 +117,39 @@ html {
   transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-.rotate-img {
-  transform: rotate(-3deg);
-  transition: transform 0.4s ease;
+/* Efek aktif saat slide di tengah */
+.swiper-slide-active img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.swiper-slide-active .rotate-img {
-  transform: rotate(0deg) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+/* ========== Responsive Fixes ========== */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .rotate-img {
+    transform: none;
+  }
+
+  .swiper-slide {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .social-icons a {
+    margin: 0 6px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
 }
