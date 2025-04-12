@@ -112,6 +112,7 @@ html {
 .swiper {
   padding: 50px 0;
   width: 100%;
+  overflow: visible; /* penting untuk mencegah elemen tersembunyi */
   display: flex;
   justify-content: center;
 }
@@ -120,6 +121,7 @@ html {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 50px;
+  overflow: visible;
 }
 
 .swiper-wrapper {
@@ -161,13 +163,13 @@ html {
   }
 
   .swiper-slide {
-    max-width: 95%;
+    max-width: 100%;
     padding: 10px;
     margin: 0 auto;
   }
 
   .swiper-slide img {
-    max-width: 320px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
