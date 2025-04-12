@@ -149,6 +149,40 @@ html {
     margin: 0 6px;
   }
 
+  @media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .hero-section .rotate-img,
+  .hero-section img {
+    max-width: 250px;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    transform: none !important;
+  }
+
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section p {
+    text-align: center;
+  }
+
+  .hero-section .btn {
+    margin: 8px 6px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
   section {
     padding: 50px 0;
   }
