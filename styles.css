@@ -116,6 +116,7 @@ html {
 .swiper-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center; /* Biar center */
 }
 
 .swiper-slide {
@@ -127,6 +128,7 @@ html {
   align-items: center;
   background: transparent;
   transition: transform 0.4s ease;
+  margin: 0 auto; /* Tambahan untuk center slide */
 }
 
 .swiper-slide img {
@@ -146,65 +148,18 @@ html {
 
 /* ========== Responsive Fixes ========== */
 @media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .rotate-img {
-    transform: none;
+  .swiper {
+    padding: 30px 0;
   }
 
   .swiper-slide {
     max-width: 95%;
     padding: 10px;
+    margin: 0 auto; /* Center di layar kecil */
   }
 
   .swiper-slide img {
-    width: 100%;
     max-width: 320px;
-  }
-
-  .social-icons a {
-    margin: 0 6px;
-  }
-
-  @media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 24px;
-  }
-
-  .hero-section .rotate-img,
-  .hero-section img {
-    max-width: 250px;
-    width: 80%;
-    height: auto;
-    margin-top: 20px;
-    transform: none !important;
-  }
-
-  .hero-section h1,
-  .hero-section h2,
-  .hero-section p {
-    text-align: center;
-  }
-
-  .hero-section .btn {
-    margin: 8px 6px;
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-
-  section {
-    padding: 50px 0;
+    margin: 0 auto; /* Center juga gambar-nya */
   }
 }
