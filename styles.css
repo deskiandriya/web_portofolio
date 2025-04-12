@@ -1,0 +1,111 @@
+/* ========== General ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== Hero Section ========== */
+.hero-section {
+  background: linear-gradient(135deg, #72c6ff, #004e92);
+  color: white;
+  min-height: 100vh;
+  transition: background 0.4s ease;
+}
+
+[data-bs-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  color: white;
+}
+
+/* Gradient Text for Name */
+.text-gradient {
+  background: linear-gradient(45deg, #3a8ef6, #72c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-name {
+  background: linear-gradient(45deg, #0056b3, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-bs-theme="dark"] .custom-name {
+  background: linear-gradient(45deg, #66ccff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ========== Social Icons ========== */
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== Card Icon Hover Effect ========== */
+.card i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.1);
+}
+
+/* ========== Rotated Image Style ========== */
+.rotate-img {
+  transform: rotate(-5deg);
+  transition: transform 0.4s ease;
+}
+
+.rotate-img:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* ========== Swiper Style (Slide Foto) ========== */
+.swiper {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.mySwiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-5deg);
+  transition: transform 0.4s ease;
+  background: transparent;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.rotate-img {
+  transform: rotate(-3deg);
+  transition: transform 0.4s ease;
+}
+
+.swiper-slide-active .rotate-img {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
