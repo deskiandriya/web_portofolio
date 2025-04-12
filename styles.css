@@ -81,7 +81,8 @@ html {
 }
 
 .swiper-slide {
-  width: 250px;
+  width: auto;
+  max-width: 90%;
   height: auto;
   display: flex;
   justify-content: center;
