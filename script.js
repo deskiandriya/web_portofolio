@@ -1,23 +1,24 @@
 // ========== AOS Initialization ==========
 AOS.init({
   duration: 1000,
-  once: false,
+  once: false, 
 });
 
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function (e) {
-    if (grecaptcha.getResponse() === "") {
-      e.preventDefault();
-      alert("Please complete the reCAPTCHA before submitting.");
-    }
-  });
+// ========== Form reCAPTCHA Validation ==========
+const form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+  if (grecaptcha.getResponse() === "") {
+    e.preventDefault();
+    alert("Please complete the reCAPTCHA before submitting.");
+  }
+});
 
 // ========== Swiper Configuration ==========
 const swiper = new Swiper(".mySwiper", {
   loop: true,
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 3, 
+  slidesPerView: 3,
   spaceBetween: 30,
   speed: 600,
   autoplay: {
