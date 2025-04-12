@@ -28,35 +28,42 @@ html {
   background: linear-gradient(45deg, #ffffff, #e0e0e0); /* Gradasi putih */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3); /* Biar tetap kebaca di dark */
 }
 
-/* Nama dengan gradasi putih pekat */
+/* Nama */
 .custom-name {
   font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   display: inline-block;
   line-height: 1.4;
   padding-bottom: 4px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
 /* Role (Frontend Developer & UI/UX Designer) */
 .custom-role {
   font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   display: inline-block;
   line-height: 1.4;
   padding-bottom: 4px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
-/* Dark mode tetap pakai gradasi putih */
-[data-bs-theme="dark"] .hero-section h1,
-[data-bs-theme="dark"] .hero-section h2,
-[data-bs-theme="dark"] .hero-section h3,
-[data-bs-theme="dark"] .hero-section p,
-[data-bs-theme="dark"] .hero-section span {
-  background: linear-gradient(45deg, #ffffff, #cccccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-section .row {
+    flex-direction: column;
+  }
+
+  .hero-section img {
+    margin-top: 30px;
+    max-width: 80%;
+  }
 }
 
 /* ========== Social Icons ========== */
@@ -105,6 +112,8 @@ html {
 .swiper {
   padding: 50px 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .mySwiper {
@@ -116,7 +125,7 @@ html {
 .swiper-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center; /* Biar center */
+  justify-content: center;
 }
 
 .swiper-slide {
@@ -128,7 +137,7 @@ html {
   align-items: center;
   background: transparent;
   transition: transform 0.4s ease;
-  margin: 0 auto; /* Tambahan untuk center slide */
+  margin: 0 auto;
 }
 
 .swiper-slide img {
@@ -140,7 +149,6 @@ html {
   transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-/* Efek aktif saat slide di tengah */
 .swiper-slide-active img {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -155,11 +163,11 @@ html {
   .swiper-slide {
     max-width: 95%;
     padding: 10px;
-    margin: 0 auto; /* Center di layar kecil */
+    margin: 0 auto;
   }
 
   .swiper-slide img {
     max-width: 320px;
-    margin: 0 auto; /* Center juga gambar-nya */
+    margin: 0 auto;
   }
 }
