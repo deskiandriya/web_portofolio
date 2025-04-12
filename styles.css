@@ -6,10 +6,12 @@
 
 body {
   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /* ========== General ========== */
 html, body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
