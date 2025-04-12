@@ -195,20 +195,17 @@ html, body {
 }
 
 
-/* Prevent horizontal scroll */
-body {
-  overflow-x: hidden;
-}
-
-/* Swiper styles */
+/* Swiper Custom Fix */
 .swiper {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 .swiper-slide {
   background-position: center;
   background-size: cover;
+  width: 300px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
