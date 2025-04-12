@@ -5,7 +5,7 @@ html {
 
 /* ========== Hero Section ========== */
 .hero-section {
-  background: linear-gradient(135deg, #2b2b2b, #0f0f0f); /* Gradasi abu-abu gelap mendekati hitam */
+  background: linear-gradient(135deg, #2b2b2b, #0f0f0f); /* Gradasi abu gelap */
   color: white;
   min-height: 100vh;
   display: flex;
@@ -15,46 +15,48 @@ html {
 }
 
 [data-bs-theme="dark"] .hero-section {
-  background: linear-gradient(135deg, #1a1a1a, #000000); /* Lebih pekat saat dark mode aktif */
+  background: linear-gradient(135deg, #1a1a1a, #000000);
   color: white;
 }
 
-/* Gradient Text untuk Nama */
-.custom-name {
+/* Gradient Text Global untuk Hero */
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.hero-section span {
   background: linear-gradient(45deg, #ffffff, #e0e0e0); /* Gradasi putih */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Nama dengan gradasi putih pekat */
+.custom-name {
   font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   display: inline-block;
   line-height: 1.4;
   padding-bottom: 4px;
 }
 
-[data-bs-theme="dark"] .custom-name {
-  background: linear-gradient(45deg, #ffffff, #cccccc); /* Putih ke abu terang */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.08);
-}
-
-/* Role (Frontend Developer & UI/UX Designer) Gradasi Putih */
+/* Role (Frontend Developer & UI/UX Designer) */
 .custom-role {
-  background: linear-gradient(45deg, #ffffff, #dddddd); /* Putih ke abu muda */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   display: inline-block;
   line-height: 1.4;
   padding-bottom: 4px;
 }
 
-[data-bs-theme="dark"] .custom-role {
-  background: linear-gradient(45deg, #ffffff, #bbbbbb); /* Gradasi putih terang */
+/* Dark mode tetap pakai gradasi putih */
+[data-bs-theme="dark"] .hero-section h1,
+[data-bs-theme="dark"] .hero-section h2,
+[data-bs-theme="dark"] .hero-section h3,
+[data-bs-theme="dark"] .hero-section p,
+[data-bs-theme="dark"] .hero-section span {
+  background: linear-gradient(45deg, #ffffff, #cccccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.08);
 }
 
 /* ========== Social Icons ========== */
