@@ -41,6 +41,17 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  centeredSlides: true, // ini penting
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+});
+
 
 // ========== Dark/Light Mode Toggle ==========
 const toggleBtn = document.getElementById("theme-toggle");
